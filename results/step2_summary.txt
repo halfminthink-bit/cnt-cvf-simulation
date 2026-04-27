@@ -1,0 +1,29 @@
+============================================================
+Step 2 Summary: 2D Jeffery+Langevin Simulation
+============================================================
+
+--- Experimental Condition ---
+  L        = 230.00 nm
+  d        = 0.780 nm
+  eta      = 1.000e-03 Pa*s
+  T        = 298.15 K
+  U (24s)  = 6.60 um/s
+  delta    = 100.0 nm  (assumed boundary layer)
+  gamma_dot= 66.00 s^-1
+  D_r      = 1623.9594 rad^2/s
+  tau_r    = 0.3079 ms
+  Pe_exp   = 0.040641
+
+--- Orientation vs Pe (N=200 ensemble, t*=5) ---
+          Pe      <cos 2θ>
+         0.1      0.023981
+         1.0      0.006048
+        10.0      0.429768
+       100.0      0.730976
+      1000.0      0.873003
+
+--- Notes ---
+  Pe_exp << 1: diffusion dominates at experimental conditions.
+  Pe = 1 requires gamma_dot = 1624 s^-1  (much larger than 66.0 s^-1).
+  The assumed delta = 100 nm (boundary layer) is a rough estimate.
+  If actual shear rate near pore entrance is much higher, Pe could reach ~1.
